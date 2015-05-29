@@ -7,8 +7,8 @@ var gulp = require('gulp'),
     gWatch = require('gulp-watch');
 
 gulp.task('default', function() {
-    var trueBase = "public/assets/js/";
-    return gWatch(trueBase + '/**/*-es6.js', function(obj){
+    var trueBase = "public/assets/js";
+    return gWatch(trueBase + '/*-es6.js', function(obj){
         if (obj.event === 'change' || obj.event === 'add') {
             gulp.src(obj.path)
                 .pipe(plumber({
