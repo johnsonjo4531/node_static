@@ -1,4 +1,7 @@
 # node_static
-a simple static node express server for serving local html and js files
+A simple static [Node](https://nodejs.org/) server built using [express](http://expressjs.com/) for serving local html and js files.
 
 Just add files to public and start with `node server.js`
+
+## JavaScript es6 and es7 support
+Run [Gulp](http://gulpjs.com/)'s default task by running `gulp` on your command line and your es6 and es7 files in public/assets/js/ will be run through [Babel](http://babeljs.io/) in order to transpile them to es5.
